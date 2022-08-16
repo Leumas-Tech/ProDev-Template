@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #2a3137;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    background-color: rgb(19, 19, 19);
+    height: 10vh;
+}
+h2{
+    margin-top: 5vh;
+}
+.thing{
+    height:40vh;
+}
+
+.headerLinks {
+    width: 100%;
+    margin-left: 1rem;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    margin-bottom: 1%;
+}
+.headerBtns{
+    position: absolute;
+    
+}
+
+.fa:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+    border-radius: 25%;
+}
+
+.socials {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* topCard CSS right udner header */
+
+.topCard img {
+    width: 100%;
+    height: 80vh;
+
+}
+
+.topCard {
+    position: relative;
+    height: 10vh;
+
+}
+.clickTitle{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+
+
+
+/* Heres the code for the projects that will be filtered, hover to show more info */
+
+
+/* Source https://www.30secondsofcode.org/css/s/hover-additional-content */
+
+.card {
+    width: 33%;
+    height: 280px;
+    padding: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card * {
+    transition: 0.3s ease all;
+}
+
+.card img {
+    margin: 0;
+   
+    border-radius: 8px;
+    width: 100%;
+    height: 224px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 {
+    margin: 0;
+    padding: 12px 12px 48px;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 100%;
+}
+
+.card .focus-content {
+    display: block;
+    padding: 8px 12px;
+}
+
+.card p {
+    margin: 0;
+    line-height: 1.5;
+ 
+}
+
+.card:hover img,
+.card:focus-within img {
+    margin-top: -80px;
+    /* display: none; */
+
+  
+}
+
+.card:hover{
+    border: 3px solid #00dafc;
+}
+.card:hover h3,
+.card:focus-within h3 {
+    padding: 8px 12px 0;   
+
+}
+
+h2,p{
+    color: white;
+    margin-bottom: 3vh;
+}
+p{
+    width: 80%;
+    text-align: center;;
+}
+
+
+
+/* https://www.w3schools.com/howto/howto_js_filter_elements.asp */
+
+.container {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.card {
+    display: none;
+    flex: 4 0 20%;
+    box-shadow: 1px 1px black;
+    margin: 1rem;
+    margin-top: 3vh;
+    background: white;
+}
+
+.show {
+    display: block;
+}
+
+.filter {
+display: flex;
+align-items: center;
+justify-content: center;    flex-direction: column;
+
+
+}
+
+.filterBtn {
+    border-radius: 3%;
+    border: 1px solid white;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    margin: 5vh;
+    margin-bottom: 3vh;
+    padding: 1vh;
+    transform: scale(1.3);
+    border-radius: 40%;
+
+    
+}
+
+
+.filterBtn:hover {
+    background-color: #ddd;
+    outline: none;
+    border-color: #ed9e9e;
+    box-shadow: 0 0 10px #ed9e9e;
+
+}
+button:hover{
+    transform: scale(1.5);
+}
+a:hover{
+    transform: scale(1.5);
+}
+
+.topCard {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2a3137;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+.outer-circle {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 50%;
+    animation: rotate 1.5s linear infinite;   
+    transform: scale(1.6);
+
+}
+
+.outer-circle span {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 50%;
+}
+
+.outer-circle:hover{
+ transform: scale(2.2);
+}
+
+span:nth-child(1) {
+    filter: blur(5px);
+}
+
+span:nth-child(2) {
+    filter: blur(10px);
+}
+
+span:nth-child(3) {
+    filter: blur(25px);
+}
+
+span:nth-child(4) {
+    filter: blur(150px);
+}
+
+.inner-circle img{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    background: black;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    margin-top: 10vh;
+}
+
+
+
+body.test {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: radial-gradient(
+        circle at top right,
+        rgba(121, 68, 154, 0.13),
+        transparent
+      ),
+      radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
+  }
+  canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  * {
+      box-sizing: content-box;
+  }
+
+@media (max-width: 600px) {
+
+  }
+
+
+  

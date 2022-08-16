@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/script/filter.js"></script>
+    <script src="/script/space background.js" type="text/babel"></script>
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="headerLinks">
+            <div class="links">
+                <a class="link" href="index.html">Home</a>
+                <a class="link" href="/html/Contact.html">Contact</a>
+                <a class="link" href="/html/services.html">Services</a>
+                <a class="link" href="https://xlabz.tech">XlabZ Tech</a>
+
+            </div>
+            <div class="socials">
+                <a href="mailto:wbermudez@xlabz.tech" class="fa fa-google"></a>
+                <a href="https://www.linkedin.com/in/william-bermudez-98b71b22b/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/william7829" class="fa fa-github"></a>
+            </div>
+
+            
+
+
+        </div>
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <!-- section main is for the entire body, everything thats not the header or the footer -->
+
+
+    <main>
+        <!-- This is for displaying a nice background to welcome users to your portfolio, Aloow employers to be wowed with this and easily navigate to your resume and place a document link, or even a quick contact button to allow people to get into contact with you -->
+   
+
+   
+    <br>
+            <div class="topCard">
+
+            <div class="outer-circle">
+                <div class="inner-circle">
+                    <img src="/images/worst 2.jpg">
+                </div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
+            <div class="hotLinks">
+            <button class="btn1"><a href="/PDFS/Resume PDF 2 .pdf" download></a>Download Resume</button>
+            <button class="btn2"><a href="/html/Contact.html" download></a>Contact Me</button>
+            </div>
+         
+        <h2 class="filterSpeechTitle">Or Filter Through My Projects</h2>
+        <p class="filterSpeed">Currently working part time as a student at Kingsland University and amateur engineer on my own time, I am open to work opportunities in the assorted topics below. I am twenty years old and studying to become a blockchain developer. As I beleieve mastering such a technology would enable me to solve a variety of real world problems from real estate, to private financing. I also love pokemon more than anything, I wish i could train pokemon all day, get super strong and beat the dog crap out of ash and his crappy little electric rodent... but this is real life so...... I hope you like some of my hard work. I focus really hard on whatever im doing.</p>
+        <br>
+        <!-- This section below is for the filter buttons -->
+        <!-- to add a new filter heres the syntax -->
+        <!--    <button class="filterBtn" onclick="filterSelection('filterName')"> Title you want shown on the button </button>   -->
+            <div id="filter">
+                <button class="filterBtn active" onclick="filterSelection('all')"> Show All</button>
+    
+                <button class="filterBtn" onclick="filterSelection('certifications')"> Certifications</button>
+    
+                <button class="filterBtn" onclick="filterSelection('arduino')"> Arduino</button>
+    
+                <button class="filterBtn" onclick="filterSelection('gadgets')"> Gadgets</button>
+    
+                <button class="filterBtn" onclick="filterSelection('HCJ')"> HTML-CSS-JavaScript</button>
+    
+                <button class="filterBtn" onclick="filterSelection('websites')"> Websites</button>
+    
+                <button class="filterBtn" onclick="filterSelection('fun')"> Fun</button>
+            </div>
+
+
+
+        <!-- This is where we can put all the projects -->
+
+        <div class="container">
+
+
+            <!-- section for certifications -->
+
+
+            <div class="card certifications">
+                <img src="https://picsum.photos/id/404/367/267" />
+                <h3>Chicago Entrepreneur Cert</h3>
+                <div class="focus-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> <a href="#">Link to source</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <!-- section for arduino filter -->
+
+
+
+            <div class="card arduino">
+                <img src="https://picsum.photos/id/404/367/267" />
+                <h3>Custom Keyboards</h3>
+                <div class="focus-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> <a href="#">Link to source</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- section for gadgets filter -->
+
+            <div class="card gadgets">
+                <img src="https://picsum.photos/id/404/367/267" />
+                <h3>Tazer Spike Knuckles</h3>
+                <div class="focus-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> <a href="#">Link to source</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <!-- section for HTML CSS and JavaScript Projects filter -->
+
+            <div class="card HCJ">
+                <img src="https://picsum.photos/id/404/367/267" />
+                <h3>User Interface Templates</h3>
+                <div class="focus-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> <a href="#">Link to source</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- section for website filter -->
+
+            <div class="card websites">
+                <img src="https://picsum.photos/id/404/367/267" />
+                <h3>Foreverment.com</h3>
+                <div class="focus-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> <a href="#">Link to source</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <!-- section for fun filter -->
+
+            <div class="card fun">
+                <img src="https://picsum.photos/id/404/367/267" />
+                <h3>Retro Gaming Emulators</h3>
+                <div class="focus-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/><a href="#">Link to source</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        </div>
+
+
+
+
+
+    </main>
+ 
+
+
+    <footer>
+        <p><a href="https://xlabz.tech" class="footerLink" >XLABZ TECH</a> Copyright @ 2022 - BermudeXYZ</p>
+    </footer>
+
+</body>
+
+</html>
